@@ -1,0 +1,96 @@
+/* Universal Part */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+p{
+  color: #727272;
+  font-weight: 400;
+  line-height: 26px; 
+  margin: 30px 0;
+}
+
+.btn{
+  width: 180px;
+  height: 64px;
+  border-radius: 10px;
+  background: #FF900E;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+}
+
+/* header part */
+header{
+  background: #ff900e1a;
+  margin-bottom:120px;
+  padding-top: 50px;
+}
+
+.width{
+  width: 80%;
+  margin: 0 auto;
+}
+nav{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  gap:10px;
+}
+
+nav ul li{
+  list-style: none;
+  padding:5px 10px;
+  font-size: 1.25rem;
+}
+
+nav h3{
+  font-size: 1.8rem;
+}
+
+nav span{
+  color:#FF900E;
+  font-size: 2.5rem;
+}
+
+nav ul li a, nav a{
+  text-decoration: none;
+  color:#424242;
+}
+
+/* Header Banner Part */
+.banner_title{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner_title h1{
+  color:#131313;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 120px;
+}
+
+.banner_title button{
+  margin-bottom: 50px;
+}
+
+/* Banner Img */
+.banner img{
+  width: 100%;
+}
+
+.banner{
+  padding:45px;
+}
