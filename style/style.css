@@ -45,13 +45,13 @@ nav{
 
 nav ul{
   display: flex;
-  gap:10px;
 }
 
 nav ul li{
   list-style: none;
-  padding:5px 10px;
+  padding:5px 8px;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 nav h3{
@@ -93,4 +93,108 @@ nav ul li a, nav a{
 
 .banner{
   padding:45px;
+}
+/* Header Done */
+
+/* Main part */
+main{
+  width:80%;
+  margin: 0 auto;
+}
+
+/* Quick list section */
+.quick_list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.quick_list div{
+  width: 48%;
+}
+
+.quick_list_img img{
+  width: 100%;
+}
+.quick_list_img{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:10px;
+}
+
+.quick_list_title h3{
+  font-size: 3rem;
+  font-weight: 500;
+}
+.quick_span{
+  color:#727272;
+}
+.of_our_span{
+  color:#131313;
+}
+.feature_span{
+  color:#FF900E;
+}
+.quick_list_title{
+  max-width: 500px;
+}
+
+
+
+
+
+
+
+/* Small Device Responsive */
+@media screen and (max-width:620px) {
+  main,
+  header{
+    padding:10px;
+  }
+  
+  nav{
+    flex-direction: column;
+  }
+
+  main,
+  .banner_title,
+  .width{
+    width: 100%;
+  }
+
+  .banner_title h1{
+    margin-top: 50px;
+  }
+
+  .banner_title button{
+    margin-bottom: 0;
+  }
+ header{
+  margin-bottom: 60px;
+ }
+  .quick_list{
+    flex-direction: column-reverse;
+    margin-bottom: 80px;
+    gap:30px;
+  }
+  .quick_list div{
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width:620px) and (max-width:1080px) {
+  
+  .banner_title{
+    width: 100%;
+  }
+  .quick_list{
+    flex-direction: column-reverse;
+    gap:30px
+  }
+  .quick_list div{
+    width: 100%;
+    max-width: none;
+  }
 }
