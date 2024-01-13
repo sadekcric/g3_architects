@@ -38,13 +38,14 @@ header{
   width: 80%;
   margin: 0 auto;
 }
+
 nav{
   display: flex;
   justify-content:space-between ;
   align-items: center;
 }
 
-nav ul{
+nav > ul{
   display: flex;
 }
 
@@ -119,6 +120,7 @@ main{
 .quick_list_img img{
   width: 100%;
 }
+
 .quick_list_img{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -152,9 +154,11 @@ main{
   grid-template-columns: repeat(2, 1fr);
   gap:30px;
 }
+
 .feature_story{
   margin-top: 50px;
 }
+
 .feature_story div{
   padding:10px 20px;
   box-shadow: 0 0 10px #ddd;
@@ -214,9 +218,11 @@ font-weight: 600;
 .fact{
   margin: 120px 0;
 }
+
 .fact h4, p{
   max-width: 500px;
 }
+
 .fact h4{
   color: #131313;
 font-size: 2.8rem;
@@ -242,14 +248,44 @@ font-weight: 700;
   font-size: 2.8rem;
   margin:10px 0;
 }
+
 .facts_card p{
   margin: 0;
 }
 
+/* Sponsor section */
+.sponsor_section{
+  margin-bottom: 120px;
+}
 
+.sponsor_title{
+  width: 70%;
+  margin:0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
+.sponsor_title h3{
+  color: #131313;
+font-size: 2.8rem;
+font-weight: 700;
+}
 
+.sponsor{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap:30px;
+}
 
+.sponsor img{
+  width: 75%;
+}
 
 
 
@@ -295,6 +331,7 @@ font-weight: 700;
     width: 100%;
     max-width: none;
   }
+  .sponsor,
   .facts_card,
   .features_section{
     grid-template-columns: 1fr;
@@ -312,6 +349,16 @@ font-weight: 700;
   .fact{
     margin: 200px 0;
   }
+  .sponsor{
+    width: 100%;
+    min-height: 200px;
+    gap:50px;
+  }
+  .sponsor img{
+    width: 50%;
+    margin: auto;
+    object-fit: cover;
+  }
 
 }
 
@@ -320,17 +367,30 @@ font-weight: 700;
   .banner_title{
     width: 100%;
   }
+  
   .quick_list{
     flex-direction: column-reverse;
     gap:30px
   }
+
   .quick_list div{
     width: 100%;
     max-width: none;
   }
+
   .experience{
     bottom: 0;
     left: 0;
+  }
+
+  .features_section{
+    grid-template-columns: 1fr;
+  }
+
+  .feature_story h4{
+    border-left: none;
+    padding:30px 0 0;
+    border-top: 3px solid red;
   }
 
   .facts_card{
