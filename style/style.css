@@ -354,7 +354,7 @@ font-weight: 700;
     min-height: 200px;
     gap:50px;
   }
-  ..sponsor_title{
+  .sponsor_title{
     width: 100%;
   }
   .sponsor img{
