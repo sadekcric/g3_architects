@@ -219,15 +219,13 @@ font-weight: 600;
   margin: 120px 0;
 }
 
-.fact h4, p{
-  max-width: 500px;
-}
+
 
 .fact h4{
   color: #131313;
 font-size: 2.8rem;
 font-weight: 700;
-
+max-width: 600px;
 }
 
 .facts_card{
@@ -249,8 +247,9 @@ font-weight: 700;
   margin:10px 0;
 }
 
-.facts_card p{
+.fact p{
   margin: 0;
+  max-width: 600px;
 }
 
 /* Sponsor section */
@@ -268,7 +267,9 @@ font-weight: 700;
   justify-content: center;
   margin-bottom: 30px;
 }
-
+.sponsor_title p{
+  max-width: 600px;
+}
 .sponsor_title h3{
   color: #131313;
 font-size: 2.8rem;
@@ -287,6 +288,23 @@ font-weight: 700;
   width: 75%;
 }
 
+footer{
+  background: #ff900e1a;
+}
+.footer{
+  margin: 0 auto;
+  width: 80%;
+  padding:40px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p{
+  font-size: 1.25rem;
+  padding:0
+}
 
 
 
