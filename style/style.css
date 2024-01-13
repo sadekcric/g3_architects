@@ -354,6 +354,9 @@ font-weight: 700;
     min-height: 200px;
     gap:50px;
   }
+  ..sponsor_title{
+    width: 100%;
+  }
   .sponsor img{
     width: 50%;
     margin: auto;
@@ -367,7 +370,7 @@ font-weight: 700;
   .banner_title{
     width: 100%;
   }
-  
+
   .quick_list{
     flex-direction: column-reverse;
     gap:30px
