@@ -4,7 +4,7 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
+ max-width: 1924px;
 }
 
 p{
@@ -28,6 +28,7 @@ p{
 
 /* header part */
 header{
+  font-family: 'Work Sans', sans-serif;
   background: #ff900e1a;
   margin-bottom:120px;
   padding-top: 50px;
@@ -98,6 +99,7 @@ nav ul li a, nav a{
 
 /* Main part */
 main{
+  font-family: 'Work Sans', sans-serif;
   width:80%;
   margin: 0 auto;
 }
@@ -127,18 +129,95 @@ main{
   font-size: 3rem;
   font-weight: 500;
 }
+
 .quick_span{
   color:#727272;
 }
+
 .of_our_span{
   color:#131313;
 }
+
 .feature_span{
   color:#FF900E;
 }
+
 .quick_list_title{
   max-width: 500px;
 }
+
+/*Features you will love & enjoy  */
+.features_section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:30px;
+}
+.feature_story{
+  margin-top: 50px;
+}
+.feature_story div{
+  padding:10px 20px;
+  box-shadow: 0 0 10px #ddd;
+  margin-bottom: 50px;
+  max-width: 700px;
+}
+
+.feature_story h4{
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+  border-left: 3px solid red;
+  padding-left: 30px;
+}
+
+.feature_story h6{
+  color: #131313;
+font-size: 1.25rem;
+font-weight: 600;
+}
+
+.feature_img img{
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
+/* Experience card */
+.experience{
+  width: 342px;
+  height: 200px;
+  border-radius: 10px;
+  background: #FF900E;
+  position: relative;
+  bottom:100px;
+  left: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experience h5{
+  color: #FFF;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.experience p{
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,6 +236,7 @@ main{
     flex-direction: column;
   }
 
+  .feature_story div,
   main,
   .banner_title,
   .width{
@@ -182,6 +262,21 @@ main{
     width: 100%;
     max-width: none;
   }
+
+  .features_section{
+    grid-template-columns: 1fr;
+  }
+  .feature_story h4{
+    border-left: none;
+    padding:30px 0 0;
+    border-top: 3px solid red;
+  }
+  .experience{
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
 }
 
 @media screen and (min-width:620px) and (max-width:1080px) {
@@ -197,4 +292,8 @@ main{
     width: 100%;
     max-width: none;
   }
+  /* .experience{
+    bottom: 0;
+    left: 0;
+  } */
 }
